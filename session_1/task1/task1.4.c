@@ -32,6 +32,11 @@ int main(void) {
     scanf("%d", &is_blacklisted);
 	
 	// Complete the rest of the code
+    if ((order_amount > 100 || is_premium == 1) && (!is_blacklisted)){
+        printf("Discount applied");
+    } else {
+        printf("No Discount");
+    }
 
 	return 0;
 }
