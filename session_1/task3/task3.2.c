@@ -54,8 +54,20 @@ int main(void) {
     /* subtask 1: Determine base fine using switch */
 	// Complete your code here
     switch (violation_type) {
+
         case 1:
-            break;
+        fine = 100; 
+        printf("Violation: Speeding\n"); break;
+
+        case 2:
+        fine = 150; 
+        printf("Violation: Signal jumping\n");
+        break;
+
+        case 3:
+        fine = 50; 
+        printf("Violation: Illegal parking\n");
+        break;
 
         default:
             printf("Invalid violation type\n");
@@ -66,8 +78,11 @@ int main(void) {
 	// Complete your code here
 	
 	if (repeat_offense == 1) {
-		// todo
-	}
+		fine = fine * 2;
+        printf("Repeat offense: Yes\n");
+	} else {
+        printf("Repeat offense: No\n");
+    }
 
     /* Output final fine */
     printf("Fine amount: %.2f\n", fine);
