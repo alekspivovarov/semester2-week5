@@ -10,8 +10,27 @@
 #include <stdio.h>
 
 int main(void) {
+
+	float sum;
+	int count;
+	float input;
+	float average;
+
+	sum = 0;
+	count = 0;
  
 	printf("--- Average Calculator ---\n");
-    	
+	
+	printf("Enter a number: ");
+	scanf("%f", &input);
+	while (input != -1)
+	{
+		sum += input;
+		count += 1;
+		printf("Enter a number: ");
+		scanf("%f", &input);
+	}
+	average = sum / count;
+	printf("Average: %f\n", average);
 	return 0;
 }
