@@ -8,8 +8,27 @@
  */
 
 #include <stdio.h>
+#include <stdbool.h>
+
+int i;
+int j;
+bool is_prime;
 
 int main(void) {
+	for(i=2; i<=100; i++)
+		{ 	is_prime = true;
+			for (j=2; j<=i-1; j++) 
+			{
+				if (i % j == 0) {
+				is_prime = false;
+				}
+			
+			}
+			if (is_prime) {
+				printf("%d\n", i);
+			}
+
+		}
     
 	return 0;
 }
