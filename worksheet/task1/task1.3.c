@@ -13,10 +13,19 @@
 #include <stdlib.h>
 #include <time.h>
 
+int number1;
+int number2;
+
 int main(void) {
- 
 	srand(time(NULL)); // Seed the random generator
 	printf("Generate two numbers between 1-6 with total cannot be 7\n");
+
+	do {
+		number1 = rand() % 6 + 1;
+		number2 = rand() % 6 + 1;
+		printf("%d %d \n", number1, number2);
+	}
+	while (number1 + number2 == 7);
     	
 	return 0;
 }
