@@ -12,6 +12,16 @@ int main(void){
 	 
 	 // compare using strcmp(str1,str2) from week 4
 	 // complete the rest of the code here
+
+     printf("Input password: ");
+     scanf("%s", password);
 	
+    while (strcmp(password, "secure123") != 0) {
+        printf("Incorrect. Try again: ");
+        scanf("%s", password);
+    }
+    
+    printf("Password is correct ");
+
     return 0;
 }

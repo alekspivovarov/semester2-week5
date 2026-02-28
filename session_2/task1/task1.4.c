@@ -15,6 +15,21 @@ int main(void){
  * When 1 is entered, print "You selected Coffee" and then redisplay the menu.
  * The same applies to other options except 0. When 0 is entered, the program terminates.
  */
+ int option;
+
+ do {
+    printf("Menu options are: \n 1 - Coffee\n 2 - Tea\n 3 - Cold drinks\n 0 - to quit\n");
+  scanf("%d", &option);
+
+  if (option == 1) {
+    printf("You selected Coffee\n");
+  } else if (option == 2) {
+    printf("You selected Tea\n");
+  } else if (option == 3) {
+    printf("You selected Cold drinks\n");
+  }
+
+ } while(option != 0);
 
     return 0;
 }

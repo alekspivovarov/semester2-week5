@@ -13,7 +13,24 @@ int main(void){
  *         break
  */
 	char choice;
-	// complete the rest of the code here
+
+	// while loop
+	/* while (1) {
+		printf("Enter 'q' to quit: ");
+		scanf("%c", &choice);
+
+		if (choice == 'q') {
+			break;
+		}
+	}
+*/
+
+// do while loop
+
+do {
+	printf("Enter 'q' to quit: ");
+		scanf(" %c", &choice);
+} while (choice != 'q');
 	
     return 0;
 }
