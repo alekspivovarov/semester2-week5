@@ -19,10 +19,14 @@ int main(void){
 	
 	//todo: convert the list comprehension
 
-	for (int i = 0; i<=10; i++){
+	for (int i = 0; i<10; i++){
 		if (numbers[i] % 2 == 0) {
 			squares[count] = numbers[i] * numbers[i];
 			count++;
+	} else {
+		squares[count] = numbers[i]; // odd unchanged
+		count++;
+	}
 	}
 	
 	//print results
