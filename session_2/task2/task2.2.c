@@ -12,6 +12,19 @@
  #include <string.h>
  
  int main(void) {
+
+	char input[50];
+
+
+	do {
+		printf("Enter a message: ");
+		fgets(input, 50, stdin);
+		input[strcspn(input, "\n")] = 0;
+		printf("%s\n", input);
+
+	}
+		while(strcmp(input, "quit") != 0);
+		
 	 
 	 
 	 return 0;
